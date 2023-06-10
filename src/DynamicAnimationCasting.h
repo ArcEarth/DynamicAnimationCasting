@@ -54,6 +54,7 @@ namespace Loki {
             RE::BGSKeyword* keyword = nullptr;
             std::optional<bool> isOnMount;
             std::optional<bool> isRunning;
+            std::optional<bool> isSprinting;
             std::optional<bool> isSneaking;
             WeaponTrigger weapons[2]; // right, left
             float chance = 1.0f;

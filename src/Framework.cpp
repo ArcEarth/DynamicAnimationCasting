@@ -145,6 +145,7 @@ void Loki::DynamicAnimationCasting::ReadToml(std::filesystem::path path) {
             trigger.isOnMount = ParseOptionalBool(event["IsOnMount"]);
             trigger.isSneaking = ParseOptionalBool(event["IsSneaking"]);
             trigger.isRunning = ParseOptionalBool(event["IsRunning"]);
+            trigger.isSprinting = ParseOptionalBool(event["IsSprinting"]);
             trigger.weapons[0].formid = ParseFormID(event, "IsEquippedRightFormID", "WeaponEspName");
             trigger.weapons[1].formid = ParseFormID(event, "IsEquippedLeftFormID", "WeaponEspName");
             trigger.weapons[0].enchant = ParseFormID(event, "HasWeaponEnchantEffect", "WeaponEnchantEffectEspName");
